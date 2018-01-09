@@ -1394,23 +1394,27 @@
 
 	var _levels2 = _interopRequireDefault(_levels);
 
-	var _Brick = __webpack_require__(17);
+	var _multiplayerLevels = __webpack_require__(17);
+
+	var _multiplayerLevels2 = _interopRequireDefault(_multiplayerLevels);
+
+	var _Brick = __webpack_require__(18);
 
 	var _Brick2 = _interopRequireDefault(_Brick);
 
-	var _Background = __webpack_require__(21);
+	var _Background = __webpack_require__(22);
 
 	var _Background2 = _interopRequireDefault(_Background);
 
-	var _Character = __webpack_require__(22);
+	var _Character = __webpack_require__(23);
 
 	var _Character2 = _interopRequireDefault(_Character);
 
-	var _Player = __webpack_require__(40);
+	var _Player = __webpack_require__(41);
 
 	var _Player2 = _interopRequireDefault(_Player);
 
-	var _ObjectCreator = __webpack_require__(23);
+	var _ObjectCreator = __webpack_require__(24);
 
 	var _ObjectCreator2 = _interopRequireDefault(_ObjectCreator);
 
@@ -1463,7 +1467,7 @@
 	  }, {
 	    key: 'loadMulti',
 	    value: function loadMulti(levelNumber) {
-	      var level = multiplayerLevels[levelNumber];
+	      var level = _multiplayerLevels2.default[levelNumber];
 	      this.load(level);
 	    }
 	  }, {
@@ -2228,6 +2232,128 @@
 
 /***/ }),
 /* 17 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var multiplayerLevels = [{
+	  name: 'Multiplayer test 3',
+	  timeout: 0,
+	  "data": [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1], [1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1], [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1], [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1], [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1], [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+	  "objects": [{
+	    "type": "laser",
+	    "x": 7,
+	    "y": 4,
+	    trigger: {
+	      type: 'switch',
+	      coords: {
+	        x: 14,
+	        y: 2
+	      }
+	    }
+	  }, {
+	    "type": "laser",
+	    "x": 10,
+	    "y": 2,
+	    trigger: {
+	      type: 'switch',
+	      coords: {
+	        x: 2,
+	        y: 4
+	      }
+	    }
+	  }, {
+	    "type": "laser",
+	    "x": 14,
+	    "y": 11,
+	    trigger: {
+	      type: 'switch',
+	      coords: {
+	        x: 13,
+	        y: 9
+	      }
+	    }
+	  }, {
+	    "type": "laser",
+	    "x": 30,
+	    "y": 11,
+	    trigger: {
+	      type: 'switch',
+	      coords: {
+	        x: 25,
+	        y: 10
+	      }
+	    }
+	  }],
+	  resources: {
+	    images: ['img/bullet.png', 'img/clone.png', 'img/head.png', 'img/heros.png', 'img/items.png', 'img/scifi.png'],
+	    audio: ['audio/music/king.it.ogg']
+	  },
+	  music: 'king.it.ogg'
+	}, {
+	  name: 'Multiplayer test 2',
+	  timeout: 0,
+	  "data": [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1], [1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 0, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+	  "objects": [
+	  /*{
+	    type:'laser', 
+	    x:19, 
+	    y:9,
+	    trigger: {
+	      type: 'timer',
+	      delay: 250,
+	      coords: {
+	        x:1,
+	        y:3
+	      }
+	    },
+	  },*/
+	  {
+	    type: 'laser',
+	    x: 19,
+	    y: 9,
+	    trigger: {
+	      type: 'switch',
+	      coords: {
+	        x: 19,
+	        y: 6
+	      }
+	    }
+	  }],
+	  resources: {
+	    images: ['img/bullet.png', 'img/clone.png', 'img/head.png', 'img/heros.png', 'img/items.png', 'img/scifi.png'],
+	    audio: ['audio/music/king.it.ogg']
+	  },
+	  music: 'king.it.ogg'
+	}, {
+	  name: 'Multiplayer test 1',
+	  timeout: 0,
+	  data: [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 2, 0, 0, 2, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+	  objects: [{ type: 'clone', x: 10, y: 10, direction: 'left', move: true }],
+	  resources: {
+	    images: ['img/bullet.png', 'img/clone.png', 'img/head.png', 'img/heros.png', 'img/items.png', 'img/scifi.png'],
+	    audio: ['audio/music/king.it.ogg']
+	  },
+	  music: 'king.it.ogg'
+	}, {
+	  name: 'Multiplayer test 1',
+	  timeout: 0,
+	  data: [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 2, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 2, 0, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+	  objects: [{ type: 'clone', x: 10, y: 10, direction: 'left', move: true }],
+	  resources: {
+	    images: ['img/bullet.png', 'img/clone.png', 'img/head.png', 'img/heros.png', 'img/items.png', 'img/scifi.png'],
+	    audio: ['audio/music/king.it.ogg']
+	  },
+	  music: 'king.it.ogg'
+	}];
+
+	exports.default = multiplayerLevels;
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2238,11 +2364,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject = __webpack_require__(18);
+	var _GameObject = __webpack_require__(19);
 
 	var _GameObject2 = _interopRequireDefault(_GameObject);
 
-	var _Block2 = __webpack_require__(20);
+	var _Block2 = __webpack_require__(21);
 
 	var _Block3 = _interopRequireDefault(_Block2);
 
@@ -2318,7 +2444,7 @@
 	exports.default = Brick;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2329,7 +2455,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Lib = __webpack_require__(19);
+	var _Lib = __webpack_require__(20);
 
 	var _Lib2 = _interopRequireDefault(_Lib);
 
@@ -2566,7 +2692,7 @@
 	exports.default = GameObject;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2614,7 +2740,7 @@
 	exports.default = { detectCollision: detectCollision, isFacing: isFacing };
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2623,7 +2749,7 @@
 	    value: true
 	});
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -2653,7 +2779,7 @@
 	exports.default = Block;
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2664,7 +2790,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject = __webpack_require__(18);
+	var _GameObject = __webpack_require__(19);
 
 	var _GameObject2 = _interopRequireDefault(_GameObject);
 
@@ -2672,7 +2798,7 @@
 
 	var _ImageRepository2 = _interopRequireDefault(_ImageRepository);
 
-	var _Block2 = __webpack_require__(20);
+	var _Block2 = __webpack_require__(21);
 
 	var _Block3 = _interopRequireDefault(_Block2);
 
@@ -2753,7 +2879,7 @@
 	exports.default = Background;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2766,11 +2892,11 @@
 
 	var _ImageRepository2 = _interopRequireDefault(_ImageRepository);
 
-	var _ObjectCreator = __webpack_require__(23);
+	var _ObjectCreator = __webpack_require__(24);
 
 	var _ObjectCreator2 = _interopRequireDefault(_ObjectCreator);
 
-	var _AiInputComponent = __webpack_require__(27);
+	var _AiInputComponent = __webpack_require__(28);
 
 	var _AiInputComponent2 = _interopRequireDefault(_AiInputComponent);
 
@@ -2778,7 +2904,7 @@
 
 	var _KeyBoardManager2 = _interopRequireDefault(_KeyBoardManager);
 
-	var _Lib = __webpack_require__(19);
+	var _Lib = __webpack_require__(20);
 
 	var _Lib2 = _interopRequireDefault(_Lib);
 
@@ -3200,7 +3326,7 @@
 	exports.default = Character;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3211,59 +3337,59 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Bullet = __webpack_require__(24);
+	var _Bullet = __webpack_require__(25);
 
 	var _Bullet2 = _interopRequireDefault(_Bullet);
 
-	var _Particle = __webpack_require__(25);
+	var _Particle = __webpack_require__(26);
 
 	var _Particle2 = _interopRequireDefault(_Particle);
 
-	var _Clone = __webpack_require__(26);
+	var _Clone = __webpack_require__(27);
 
 	var _Clone2 = _interopRequireDefault(_Clone);
 
-	var _Pike = __webpack_require__(29);
+	var _Pike = __webpack_require__(30);
 
 	var _Pike2 = _interopRequireDefault(_Pike);
 
-	var _Laser = __webpack_require__(30);
+	var _Laser = __webpack_require__(31);
 
 	var _Laser2 = _interopRequireDefault(_Laser);
 
-	var _Timer = __webpack_require__(31);
+	var _Timer = __webpack_require__(32);
 
 	var _Timer2 = _interopRequireDefault(_Timer);
 
-	var _Switch = __webpack_require__(32);
+	var _Switch = __webpack_require__(33);
 
 	var _Switch2 = _interopRequireDefault(_Switch);
 
-	var _FlyingThing = __webpack_require__(33);
+	var _FlyingThing = __webpack_require__(34);
 
 	var _FlyingThing2 = _interopRequireDefault(_FlyingThing);
 
-	var _FlyingText = __webpack_require__(34);
+	var _FlyingText = __webpack_require__(35);
 
 	var _FlyingText2 = _interopRequireDefault(_FlyingText);
 
-	var _Gem = __webpack_require__(35);
+	var _Gem = __webpack_require__(36);
 
 	var _Gem2 = _interopRequireDefault(_Gem);
 
-	var _Platform = __webpack_require__(36);
+	var _Platform = __webpack_require__(37);
 
 	var _Platform2 = _interopRequireDefault(_Platform);
 
-	var _Door = __webpack_require__(37);
+	var _Door = __webpack_require__(38);
 
 	var _Door2 = _interopRequireDefault(_Door);
 
-	var _Text = __webpack_require__(38);
+	var _Text = __webpack_require__(39);
 
 	var _Text2 = _interopRequireDefault(_Text);
 
-	var _GraphicComponent = __webpack_require__(39);
+	var _GraphicComponent = __webpack_require__(40);
 
 	var _GraphicComponent2 = _interopRequireDefault(_GraphicComponent);
 
@@ -3366,7 +3492,7 @@
 	exports.default = instance;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3377,7 +3503,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -3450,7 +3576,7 @@
 	exports.default = Bullet;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3461,7 +3587,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -3538,7 +3664,7 @@
 	exports.default = Particle;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3549,7 +3675,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -3557,11 +3683,11 @@
 
 	var _ImageRepository2 = _interopRequireDefault(_ImageRepository);
 
-	var _ObjectCreator = __webpack_require__(23);
+	var _ObjectCreator = __webpack_require__(24);
 
 	var _ObjectCreator2 = _interopRequireDefault(_ObjectCreator);
 
-	var _AiInputComponent = __webpack_require__(27);
+	var _AiInputComponent = __webpack_require__(28);
 
 	var _AiInputComponent2 = _interopRequireDefault(_AiInputComponent);
 
@@ -3780,7 +3906,7 @@
 	exports.default = Clone;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3789,7 +3915,7 @@
 	    value: true
 	});
 
-	var _InputComponent = __webpack_require__(28);
+	var _InputComponent = __webpack_require__(29);
 
 	var _InputComponent2 = _interopRequireDefault(_InputComponent);
 
@@ -3848,7 +3974,7 @@
 	exports.default = AiInputComponent;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -3889,7 +4015,7 @@
 	exports.default = InputComponent;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3900,7 +4026,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -3952,7 +4078,7 @@
 	exports.default = Pike;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3963,7 +4089,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -3971,7 +4097,7 @@
 
 	var _ImageRepository2 = _interopRequireDefault(_ImageRepository);
 
-	var _ObjectCreator = __webpack_require__(23);
+	var _ObjectCreator = __webpack_require__(24);
 
 	var _ObjectCreator2 = _interopRequireDefault(_ObjectCreator);
 
@@ -4059,7 +4185,7 @@
 	exports.default = Laser;
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4070,7 +4196,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -4116,7 +4242,7 @@
 	exports.default = Timer;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4127,7 +4253,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -4195,7 +4321,7 @@
 	exports.default = Switch;
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4206,7 +4332,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -4306,7 +4432,7 @@
 	exports.default = FlyingThing;
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4317,7 +4443,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -4378,7 +4504,7 @@
 	exports.default = FlyingText;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4389,7 +4515,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -4397,7 +4523,7 @@
 
 	var _ImageRepository2 = _interopRequireDefault(_ImageRepository);
 
-	var _ObjectCreator = __webpack_require__(23);
+	var _ObjectCreator = __webpack_require__(24);
 
 	var _ObjectCreator2 = _interopRequireDefault(_ObjectCreator);
 
@@ -4469,7 +4595,7 @@
 	exports.default = Gem;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4480,7 +4606,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -4575,7 +4701,7 @@
 	exports.default = Platform;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4586,7 +4712,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -4594,7 +4720,7 @@
 
 	var _ImageRepository2 = _interopRequireDefault(_ImageRepository);
 
-	var _ObjectCreator = __webpack_require__(23);
+	var _ObjectCreator = __webpack_require__(24);
 
 	var _ObjectCreator2 = _interopRequireDefault(_ObjectCreator);
 
@@ -4690,7 +4816,7 @@
 	exports.default = Door;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4701,7 +4827,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GameObject2 = __webpack_require__(18);
+	var _GameObject2 = __webpack_require__(19);
 
 	var _GameObject3 = _interopRequireDefault(_GameObject2);
 
@@ -4747,7 +4873,7 @@
 	exports.default = Text;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -4788,7 +4914,7 @@
 	exports.default = GraphicComponent;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4797,7 +4923,7 @@
 	    value: true
 	});
 
-	var _PlayerInputComponent = __webpack_require__(41);
+	var _PlayerInputComponent = __webpack_require__(42);
 
 	var _PlayerInputComponent2 = _interopRequireDefault(_PlayerInputComponent);
 
@@ -4853,7 +4979,7 @@
 	exports.default = Player;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4862,7 +4988,7 @@
 	    value: true
 	});
 
-	var _InputComponent = __webpack_require__(28);
+	var _InputComponent = __webpack_require__(29);
 
 	var _InputComponent2 = _interopRequireDefault(_InputComponent);
 
